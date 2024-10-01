@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Google Search</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="logo">
+            <h1>Google Advanced Search</h1>
+        </div>
+
+        <p class="subtitle">Find pages with...</p>
+
+        <section class="search-section">
+            <form action="https://www.google.com/search" target="_blank">
+                <!-- All these words -->
+                <div class="input-group">
+                    <label for="all">All these words:</label>
+                    <input type="text" id="all" name="as_q" placeholder="Type the important words...">
+                    <span class="hint"><b>Example:</b> <i>tricolor rat terrier</i></span>
+                </div>
+
+                <!-- This exact word or phrase -->
+                <div class="input-group">
+                    <label for="exact">This exact word or phrase:</label>
+                    <input type="text" id="exact" name="as_epq" placeholder="Put exact words in quotes...">
+                    <span class="hint"><b>Example:</b> <i>"rat terrier"</i></span>
+                </div>
+
+                <!-- Any of these words -->
+                <div class="input-group">
+                    <label for="any">Any of these words:</label>
+                    <input type="text" id="any" name="as_oq" placeholder="Type OR between all the words you want...">
+                    <span class="hint"><b>Example:</b> <i>miniature OR standard</i></span>
+                </div>
+
+                <!-- None of these words -->
+                <div class="input-group">
+                    <label for="none">None of these words:</label>
+                    <input type="text" id="none" name="as_eq" placeholder="Put a minus sign before words you don't want...">
+                    <span class="hint"><b>Example:</b> <i>-rodent, -"Jack Russell"</i></span>
+                </div>
+
+                <div class="button-container">
+                    <input type="submit" value="Google Advanced Search" class="btn-search">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
